@@ -1,36 +1,39 @@
-Mod/Modpack Creatures
-=====================
+Sheep for Creatures MOB-Engine
+==============================
 Copyright (c) 2015-2016 BlockMen <blockmen2015@gmail.com>
 
-Version: 2.3.1
+Version: 2.1
 
 
-A Mod(pack) for Minetest that provides a MOB-Engine and adds several creatures to the game.
-Currently included: Ghosts, Zombies, Sheep, Chicken and Oerrki.
+Adds sheep to Minetest (requires Creatures MOB-Engine).
+Sheep spawn only at day-time and are friendly and remain around 5 minutes in the world.
+There are four different wool colors: white, grey, brown and black.
+You can tame them by feading them with wheat. If there is grass they eat the grass
+and regrow wool that way. They will follow you if you have Wheat in your hand.
+Sheep have 8 HP and drop 1-2 wool when punched or 1-3 wool when using shears.
+
+Sheers are crafted by using 2 steel ingots and one stick in following shape:
+
+  - 	ingot
+ingot 	stick
 
 
 License: 
 ~~~~~~~~
-Code(if not stated differently):
+Code:
 (c) Copyright 2015-2016 BlockMen; modified zlib-License
 see "LICENSE.txt" for details.
 
-Media(if not stated differently):
+Media(textures and meshes/models):
 (c) Copyright (2014-2016) BlockMen; CC-BY-SA 3.0
 
-see each MOB-Module for detailed informations.
+Sounds:
+- creatures_sheep.1.ogg, confusion_music(https://freesound.org/people/confusion_music) CC-BY 3.0
+- creatures_sheep.2.ogg, confusion_music(https://freesound.org/people/confusion_music) CC-BY 3.0
+- creatures_sheep.3.ogg, Yuval(https://freesound.org/people/Yuval) CC-BY 3.0
+- creatures_shears.ogg, SmartWentCody(https://freesound.org/people/SmartWentCody) CC-BY 3.0
 
 
 Github:
 ~~~~~~~
-https://github.com/BlockMen/cme
-
-
-Forum:
-~~~~~~
-https://forum.minetest.net/viewtopic.php?id=8638
-
-
-Changelog:
-~~~~~~~~~~
-see Changelog.txt
+https://github.com/BlockMen/cme/sheep
