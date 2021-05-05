@@ -140,11 +140,6 @@ local def = {
 		light = {min = 10, max = 15},
 		height_limit = {min = 0, max = 25},
 
-		spawn_egg = {
-			description = "Sheep Spawn-Egg",
-			texture = "creatures_egg_sheep.png",
-		},
-
 		spawner = {
 			description = "Sheep Spawner",
 			range = 8,
@@ -223,7 +218,7 @@ cmer.register_mob(def)
 if core.global_exists("asm") then
 	asm.addEgg({
 		name = "sheep",
-		inventory_image = "creatures_sheep_spawnegg.png",
+		inventory_image = "creatures_egg_sheep.png",
 		spawn = "creatures:sheep",
 		ingredients = "group:wool",
 	})
