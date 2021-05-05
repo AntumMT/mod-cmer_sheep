@@ -219,3 +219,12 @@ local def = {
 }
 
 cmer.register_mob(def)
+
+if core.global_exists("asm") then
+	asm.addEgg({
+		name = "sheep",
+		inventory_image = "creatures_sheep_spawnegg.png",
+		spawn = "creatures:sheep",
+		ingredients = "group:wool",
+	})
+end
