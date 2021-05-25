@@ -1,0 +1,5 @@
+
+TODO:
+- fix dropping creatures:flesh if not available
+- add localization support
+- use settings for lifespan, spawn interval, & spawn chance
