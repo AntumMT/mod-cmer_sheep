@@ -54,7 +54,7 @@ local function shear(self, drop_count, sound)
 		end
 
 		setColor(self)
-		cmer.dropItems(pos, {{"wool:" .. self.wool_color, drop_count}})
+		creatures.dropItems(pos, {{"wool:" .. self.wool_color, drop_count}})
 	end
 end
 
@@ -125,7 +125,7 @@ local def = {
 		if self.has_wool then
 			table.insert(items, {"wool:" .. self.wool_color, {min = 1, max = 2}})
 		end
-		cmer.dropItems(self.object:get_pos(), items)
+		creatures.dropItems(self.object:get_pos(), items)
 	end,
 
 	spawning = {
@@ -165,7 +165,7 @@ local def = {
 		end
 
 		if not self.wool_color then
-			self.wool_color = cmer.rnd(colors) or "white"
+			self.wool_color = creatures.rnd(colors) or "white"
 		end
 		-- update fur
 		setColor(self)
@@ -219,7 +219,7 @@ local def = {
 	end
 }
 
-cmer.register_mob(def)
+creatures.register_mob(def)
 
 if core.global_exists("asm") then
 	asm.addEgg({
