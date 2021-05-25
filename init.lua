@@ -69,6 +69,7 @@ local colors = {
 
 local def = {
 	name = ":creatures:sheep",
+	nametag = creatures.feature_nametags and "Sheep" or nil,
 	ownable = true,
 	stats = {
 		hp = 8,
