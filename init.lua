@@ -35,6 +35,12 @@ core.register_craft({
 })
 
 
+local sheep_drops = {}
+if core.registered_items["mobs:meat_raw"] then
+	table.insert(sheep_drops, {"mobs:meat_raw"})
+end
+
+
 local function setColor(self)
 	if self and self.object then
 		local ext = ".png"
@@ -122,7 +128,7 @@ local def = {
 	},
 
 	drops = function(self)
-		local items = {{"creatures:flesh"}}
+		local items = sheep_drops
 		if self.has_wool then
 			table.insert(items, {"wool:" .. self.wool_color, {min = 1, max = 2}})
 		end
