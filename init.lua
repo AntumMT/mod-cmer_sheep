@@ -27,10 +27,10 @@ core.register_tool(":creatures:shears", {
 })
 
 core.register_craft({
-	output = 'creatures:shears',
+	output = "creatures:shears",
 	recipe = {
-		{'', 'default:steel_ingot'},
-		{'default:steel_ingot', 'default:stick'},
+		{"", "default:steel_ingot"},
+		{"default:steel_ingot", "default:stick"},
 	}
 })
 
